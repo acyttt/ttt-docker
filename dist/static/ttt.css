@@ -1,0 +1,35 @@
+button {
+  display:inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 200%;
+}
+#button_section {
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12em;
+}
+.new_game {
+  border-radius: 5px;
+  width: 180px;
+  font-size: 100%;
+}
+.control{
+  padding-bottom: 50px;
+}
+.spacer {
+  visibility: hidden;
+}
+.message {
+  padding-top: 30px;
+  text-align: center;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.message-box {
+  width: 180px;
+}
+.error {
+  text-color: red;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>Tic Tac Toe</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <script src="static/ttt.js"></script>
+      <link rel="stylesheet" type="text/css" href="static/ttt.css">
+  </head>
+  <body>
+    <div ng-controller="ttt">
+      <div id=button_section>
+        <div class="control">
+        <button class="new_game" ng-click="newGame()" ng-init="newGame()">New game</button>
+        </div>
+        <button ng-repeat="item in items | limitTo:3 | limitTo:-3" id="move-{{$index}}" 
+            ng-click="playGame(item)">{{item.user}}</button>
+        <div>
+          <button ng-repeat="item in items | limitTo:6 | limitTo:-3" id="move-{{$index}}" 
+            ng-click="playGame(item)">{{item.user}}</button>
+        </div>
+        <div>
+          <button ng-repeat="item in items | limitTo:9 | limitTo:-3" id="move-{{$index}}" 
+            ng-click="playGame(item)">{{item.user}}</button>
+        </div>
+        <div class="message-box">
+          <div class="message" ng-if=game.won_by>Game won by: {{game.won_by}}</div>
+          <div class="message" ng-if=game.is_over>Game is over</div>
+          <div class="error message">{{game.error}}</div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

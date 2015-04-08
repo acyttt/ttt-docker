@@ -1,0 +1,8 @@
+Build docker image:
+  sudo docker build -t ttt .
+Run docker image:
+  sudo docker run --name ttt-instance -p 80:80 -i -t -d ttt
+Stop docker image:
+  sudo docker stop ttt-instance
+Remove docker image:
+  sudo docker rm ttt-instance
