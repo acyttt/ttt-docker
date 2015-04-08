@@ -1,34 +1,35 @@
 button {
   display:inline-block;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   text-align: center;
-  font-size: 200%;
+  font-size: 300%;
 }
 #button_section {
-  padding-top: 100px;
+  padding-top: 150px;
   margin-left: auto;
   margin-right: auto;
-  width: 12em;
+  width: 18em;
 }
 .new_game {
   border-radius: 5px;
-  width: 180px;
-  font-size: 100%;
+  width: 270px;
+  font-size: 150%;
 }
 .control{
-  padding-bottom: 50px;
+  padding-bottom: 75px;
 }
 .spacer {
   visibility: hidden;
 }
 .message {
-  padding-top: 30px;
+  padding-top: 45px;
   text-align: center;
+  font-size: 200%;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .message-box {
-  width: 180px;
+  width: 270px;
 }
 .error {
   text-color: red;
