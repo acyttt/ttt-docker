@@ -1,7 +1,7 @@
 (function() {
   function ttt($scope, $http) {
     $scope.getGame = function() {
-      $http.get('http://localhost/api/?game_id=' + $scope.game_id)
+      $http.get('/api/?game_id=' + $scope.game_id)
          .success(function(data, $location) {
             $scope.game = data;
             $scope.items = $scope.game.full_board;
@@ -11,7 +11,7 @@
       var dataObj = {
         new: true
       };
-      $http.post('http://localhost/api/', dataObj).
+      $http.post('/api/', dataObj).
         success(function(data) {
             $scope.game = data;
             $scope.items = $scope.game.full_board;
@@ -22,7 +22,7 @@
         game_id: $scope.game.game_id,
         move: item.square
       };
-      $http.post('http://localhost/api/', dataObj).
+      $http.post('/api/', dataObj).
         success(function(data) {
             $scope.game = data;
             $scope.items = $scope.game.full_board;
