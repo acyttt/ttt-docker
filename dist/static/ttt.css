@@ -1,19 +1,28 @@
+button:focus {
+  outline:0;
+}
 button {
   display:inline-block;
-  width: 90px;
-  height: 90px;
+  width: 150px;
+  min-width: 150px;
+  height: 150px;
+  min-height: 150px;
   text-align: center;
-  font-size: 300%;
+  font-size: 600%;
 }
 #button_section {
-  padding-top: 150px;
+  padding-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  width: 18em;
+  width: 35em;
+}
+.game_board {
+  background: transparent;
+  border-color: black;
 }
 .new_game {
   border-radius: 5px;
-  width: 270px;
+  width: 450px;
   font-size: 150%;
 }
 .control{
@@ -22,14 +31,41 @@ button {
 .spacer {
   visibility: hidden;
 }
+#move-1 {
+  border-width: 0 5px 5px 0;
+}
+#move-2 {
+  border-width: 0 5px 5px 5px;
+}
+#move-3 {
+  border-width: 0 0 5px 5px;
+}
+#move-4 {
+  border-width: 5px 5px 5px 0;
+}
+#move-5 {
+  border-width: 5px 5px 5px 5px;
+}
+#move-6 {
+  border-width: 5px 0 5px 5px;
+}
+#move-7 {
+  border-width: 5px 5px 0 0;
+}
+#move-8 {
+  border-width: 5px 5px 0 5px;
+}
+#move-9 {
+  border-width: 5px 0 0 5px;
+}
 .message {
-  padding-top: 45px;
+  padding-top: 40px;
   text-align: center;
   font-size: 200%;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .message-box {
-  width: 270px;
+  width: 450px;
 }
 .error {
   text-color: red;
