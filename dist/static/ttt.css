@@ -25,8 +25,12 @@ button {
   width: 450px;
   font-size: 150%;
 }
+button.new_game {
+  height: 100px;
+  min-height: 100px;
+}
 .control{
-  padding-bottom: 75px;
+  min-height: 150px
 }
 .spacer {
   visibility: hidden;
@@ -59,13 +63,14 @@ button {
   border-width: 5px 0 0 5px;
 }
 .message {
-  padding-top: 40px;
+  padding: 40px;
   text-align: center;
   font-size: 200%;
   font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .message-box {
   width: 450px;
+  min-height: 120px;
 }
 .error {
   text-color: red;

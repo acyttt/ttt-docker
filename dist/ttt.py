@@ -17,13 +17,13 @@ class Game(object):
     computer: String literal
     computer_board: List of ints representing computers moves
     computer_token: String representing token computer is using
+    current_round: Int representing current round
     current_user: String representing current_user
     full_board: Dict of positions and players
     open_moves: list of ints representing unplayed moves
     player: String literal
     player_board: List of ints representing players moves
     player_token: String representing token player is using
-    current_round: Int representing current round
     users: List of users
     winning_board_list: List of tuples indicating winning boards
   """
