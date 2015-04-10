@@ -9,9 +9,6 @@
   <body>
     <div ng-controller="ttt" ng-init="newGame()">
       <div id=button_section>
-        <div class="message-box">
-          <div class="message" ng-if=game.won_by>Game won by: {{game.won_by}}</div>
-        </div>
         <button class="game_board" ng-repeat="item in items | limitTo:3 | limitTo:-3" id="move-{{$index+1}}" 
             ng-click="playGame(item)">{{item.user}}</button>
         <div>
@@ -25,7 +22,8 @@
         <div class="message-box">
           <div class="error message" ng-if="game.error">{{game.error}}</div>
           <div ng-if="game.is_over">
-            <div class="message">Game is over</div>
+            <div class="message" ng-if=game.won_by>Game won by {{game.won_by}}</div>
+            <div class="message" ng-if=!game.won_by>Tie game</div>
             <div class="control">
               <button class="new_game" ng-click="newGame()">New game?</button>
             </div>
